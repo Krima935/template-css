@@ -64,13 +64,16 @@
 }
 
 .box--interactive{
+    transition: .3s cubic-bezier(0,0,.5,1);
+    transition-property: scale , box-shadow;
     cursor: pointer;
-    transition: scale .3s cubic-bezier(0,0,.5,1);
 }
 
 .box--interactive:hover{
+    transition: .3s cubic-bezier(0,0,.5,1);
+    transition-property: scale , box-shadow;
+    box-shadow: 0px 0px 50px -30px rgba(0, 0, 0, 1);
     scale: 1.01;
-    transition: scale .3s cubic-bezier(0,0,.5,1);
 }
 
 @media screen and (max-width: 600px) {
