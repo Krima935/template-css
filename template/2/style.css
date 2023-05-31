@@ -68,9 +68,9 @@
         grid-template-columns: 1fr !important;
     }
     .box{
-        --box-width: 1;
-        --box-height: 1;
-        --box-column-size: 1 ;
+        --box-width: 1 !important;
+        --box-height: 1 !important;
+        --box-column-size: 1 !important;
         border-radius: 25px !important;
     }
 }
