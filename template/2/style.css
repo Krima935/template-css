@@ -63,6 +63,16 @@
     background-size: cover;
 }
 
+.box--interactive{
+    cursor: pointer;
+    transition: scale .3s cubic-bezier(0,0,.5,1);
+}
+
+.box--interactive:hover{
+    scale: 1.01;
+    transition: scale .3s cubic-bezier(0,0,.5,1);
+}
+
 @media screen and (max-width: 600px) {
     .box-container{
         grid-template-columns: 1fr !important;
@@ -72,5 +82,14 @@
         --box-height: 1 !important;
         --box-column-size: 1 !important;
         border-radius: 25px !important;
+    }
+    .box--column-2-row-1{
+        --box-height: 1.25 !important;
+    }
+    .box--column-1-row-2{
+        --box-height: .75 !important;
+    }
+    .box--column-2-row-2{
+        --box-height: .75 !important;
     }
 }
