@@ -7,7 +7,17 @@
         <section class="box"></section>
         <section class="box"></section>
         <section class="box box--column-2-row-1"></section>
-        <section class="box box--image box--column-1-row-2"></section>
+        <section class="box box--image box--dialog box--column-1-row-2">
+            <button class="box--dialog-button" onclick="Dialog.showModal()"><img class="box--dialog-icon" src="cross.svg" alt="X"></button>
+            <dialog class="box--dialog-form" id="Dialog">
+                <form method="dialog">
+                    <h2 class="title">Lorem, ipsum.</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, consectetur.</p>
+
+                    <button class="box--dialog-button" ><img class="box--dialog-icon" src="cross.svg" alt="X"></button>
+                </form>
+            </dialog>
+        </section>
         <section class="box"></section>
         <section class="box"></section>
         <section class="box"></section>
