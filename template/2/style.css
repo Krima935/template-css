@@ -99,3 +99,13 @@
         --box-height: .75 !important;
     }
 }
+
+@supports(view-transition-name: root){
+    @keyframes experimental-view-transition-animation {
+        from{ transform: translateY(100%);}
+    }
+    ::view-transition-new(root),
+    ::view-transition-old(root){
+        animation: 1s cubic-bezier(0, 0, 0.2, 1) both experimental-view-transition-animation;
+    }
+}
